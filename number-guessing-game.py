@@ -53,7 +53,7 @@ Your Current high score is {}
 			continue
 
 
-#this statment starts the minute the program is run in the repl or terminal
+#this statment starts when the program is running in the repl or terminal
 
 if __name__ == '__main__':
 	startGame()
