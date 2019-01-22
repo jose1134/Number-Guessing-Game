@@ -50,10 +50,6 @@ def startGame():
 
 
 
-
-
-
-def startOver():
 	answer = raw_input('Would you like to start again? [y]es/[n]o :  ').lower()
 	if answer == 'y' or 'yes':
 		print('''Your Current high score is {}'''.format(tries))
