@@ -16,14 +16,15 @@ def startGame():
 			if guess == randomNumber:
 				print('You got it!')
 				print('It took you {} tries'.format(tries))
-				answer = raw_input('Would you like to start again? [y]es/[n]o :  ')
-				if answer.lower() == 'y' or 'yes':
-					print('''Your Current high score is {}'''.format(tries))
-					startGame()
-				elif answer.lower() == 'n' or 'no':
-					sys.exit('Thanks, Come play again soon!')
-				else:
-					print('Please enter y for yes or n for no')
+				while True:
+					answer = raw_input('Would you like to start again? [y]es/[n]o :  ').lower()
+					if answer == 'y' or 'yes':
+						print('''Your Current high score is {}'''.format(tries))
+						startGame()
+					elif answer == 'n' or 'no':
+						sys.exit('Thanks, Come play again soon!')
+					else:
+						print('Please enter y for yes or n for no')
 			elif guess > 10:
 				print('Please enter a valid number between 1 and 10, Thank You')
 				tries += 1
