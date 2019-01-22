@@ -50,14 +50,18 @@ def startGame():
 
 
 
-	answer = raw_input('Would you like to start again? [y]es/[n]o :  ').lower()
-	if answer == 'y' or 'yes':
-		print('''Your Current high score is {}'''.format(tries))
-		startGame()
-	elif answer.lower() == 'n' or 'no':
-		sys.exit('Thanks, Come play again soon!')
-	else:
-		print('Please enter y for yes or n for no')
+
+
+
+# def startOver():
+# 	answer = raw_input('Would you like to start again? [y]es/[n]o :  ').lower()
+# 	if answer == 'y' or 'yes':
+# 		print('''Your Current high score is {}'''.format(tries))
+# 		startGame()
+# 	elif answer.lower() == 'n' or 'no':
+# 		sys.exit('Thanks, Come play again soon!')
+# 	else:
+# 		print('Please enter y for yes or n for no')
 
 
 
