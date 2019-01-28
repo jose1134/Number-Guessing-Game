@@ -35,6 +35,10 @@ Your Current high score is {}
                                 print('Please enter a valid number between 1 and 10, Thank You')
                                 tries += 1
                                 continue
+                        elif guess <= 0:
+                                print('Please enter a valid number between 1 and 10, Thank You')
+                                tries += 1
+                                continue
                         elif guess > randomNumber:
                                 print('It is Lower!')
                                 tries += 1
